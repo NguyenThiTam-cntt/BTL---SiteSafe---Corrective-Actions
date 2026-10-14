@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1d2a3c">
+    <title>SiteSafe - Tiến độ xử lý sự cố</title>
+    <!-- thư viện Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="corrective actions.css">
+</head>
+<body>
+    <div class="khung-ung-dung">
+        <aside class="thanh-ben" id="thanhBen">
+            
+            <a href="#" class="thuong-hieu"><span class="bieu-tuong-thuong-hieu">SS</span>
+                <span>Site<span class="diem-nhan-thuong-hieu">Safe</span></span></a>
+
+            <div class="chuyen-du-an" id="nutChuyenKhuVucSidebar">
+                <small>CÔNG TRƯỜNG</small>
+                <b><span id="tenKhuVucHienTai">Metro Tower - Khu B</span> <span><i class="fa-solid fa-sort" style="font-size: 8px;"></i></span></b>
+                
+                <div class="menu-tha-xuong" id="menuThaXuongSidebar" hidden>
+                    <div class="muc-chon-khu-vuc" data-khu-vuc="Metro Tower - Khu A">Metro Tower - Khu A</div>
+                    <div class="muc-chon-khu-vuc" data-khu-vuc="Metro Tower - Khu B">Metro Tower - Khu B</div>
+                    <div class="muc-chon-khu-vuc" data-khu-vuc="Metro Tower - Khu C">Metro Tower - Khu C</div>
+                    <div class="muc-chon-khu-vuc" data-khu-vuc="Metro Tower - Khu D">Metro Tower - Khu D</div>
+                </div>
+            </div>
+
+            <div class="nhan-dieu-huong">QUẢN LÝ CÔNG TRƯỜNG</div>
+            <nav class="dieu-huong">
+                <button class="muc-dieu-huong"><span class="khung-bieu-tuong-nav"><i
+                            class="fa-solid fa-table-cells"></i></span><span>Bản đồ rủi ro</span></button>
+                <button class="muc-dieu-huong dang-chon"><span class="khung-bieu-tuong-nav"><i
+                            class="fa-solid fa-triangle-exclamation"></i></span><span>Hành động khắc
+                        phục</span></button>
+                <button class="muc-dieu-huong"><span class="khung-bieu-tuong-nav"><i
+                            class="fa-solid fa-clipboard-list"></i></span><span>Báo cáo an toàn</span></button>
+            </nav>
+            <div class="chan-thanh-ben">
+                <div class="nguoi-dung"><span class="anh-dai-dien">NM</span>
+                    <div><b>Nguyễn Văn Minh</b><small>Quản lý công trường</small></div>
+                </div>
+                <button class="nut-dang-xuat">Đăng xuất</button>
+            </div>
+        </aside>
+
+        <main class="noi-dung-chinh">
+            <header class="thanh-tren">
+                <button class="nut-menu-mobile" id="nutMenuMobile" aria-label="Mở menu">☰</button>
+                
+                <div class="thong-tin-du-an" id="nutChuyenDuAnTop">
+                    <span class="bieu-tuong-du-an"><i class="fa-solid fa-building" style="font-size: 16px;"></i></span>
+                    <div>
+                        <small>CÔNG TRƯỜNG ĐANG THEO DÕI</small>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <b id="tenDuAnHienTai">Dự án Metro Tower - Zone B</b>
+                            <i class="fa-solid fa-chevron-down" style="font-size: 10px; color: #475569;"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-tha-xuong" id="menuThaXuongTop" hidden>
+                        <div class="muc-chon-khu-vuc" data-khu-vuc="Dự án Metro Tower - Zone A">Dự án Metro Tower - Zone A</div>
+                        <div class="muc-chon-khu-vuc" data-khu-vuc="Dự án Metro Tower - Zone B">Dự án Metro Tower - Zone B</div>
+                        <div class="muc-chon-khu-vuc" data-khu-vuc="Dự án Metro Tower - Zone C">Dự án Metro Tower - Zone C</div>
+                        <div class="muc-chon-khu-vuc" data-khu-vuc="Dự án Metro Tower - Zone D">Dự án Metro Tower - Zone D</div>
+                    </div>
+                </div>
+
+                <div class="hanh-dong-tren">
+                    <label class="tim-kiem-tren">⌕ <input placeholder="Tìm mối nguy, hồ sơ..."> <span>⌘ K</span></label>
+                    <button aria-label="Thông báo"><i class="fa-regular fa-bell"></i></button>
+                    <button aria-label="Trợ giúp"><i class="fa-regular fa-circle-question"></i></button>
+                </div>
+            </header>
+
+            <div class="vung-noi-dung">
+                <div class="duong-dan">Hành động khắc phục / Tiến độ xử lý</div>
+                <section class="tieu-de-trang">
+                    <div>
+                        <h1>Tiến độ xử lý sự cố</h1>
+                        <p>Thứ Bảy, 03/10/2026 · Ca sáng · Cập nhật lúc 10:32</p>
+                    </div>
+                    <button class="nut nut-cam" id="nutXuatBaoCao">⇩ Xuất báo cáo</button>
+                </section>
+
+                <section class="bang-thong-bao-uu-tien">
+                    <div class="noi-dung-uu-tien"><span>⚑</span>
+                        <div>
+                            <b>12 sự cố ưu tiên </b><small>· 9 đang mở / 24 trên toàn dự án</small>
+                        </div>
+                    </div>
+                    <div class="cac-so-lieu-uu-tien"><b>3 quá hạn</b><b>6 đến hạn trong 48 giờ</b><b class="so-luong-da-dong">3
+                            đã đóng</b></div>
+                </section>
+
+                <section class="thanh-cong-cu">
+                    <label class="truong-tim-kiem">⌕ <input type="search" id="oTimKiem"
+                            placeholder="Tìm mã, tiêu đề sự cố..."></label>
+                    <label class="khung-chon"><span class="bieu-tuong-chon">⌄</span><select id="boLocKhuVuc"
+                            aria-label="Lọc theo khu vực">
+                            <option value="all">Tất cả khu vực</option>
+                            <option value="B">Zone B</option>
+                            <option value="C">Zone C</option>
+                            <option value="D">Zone D</option>
+                        </select></label>
+                    <button class="chip-loc" id="nutLocUuTien">⚑ Ưu tiên</button>
+                    <button class="chip-loc" id="nutMoBoLoc">☷ Bộ lọc</button>
+                    <div class="chuyen-che-xem"><button class="nut-che-xem dang-chon" id="nutKanban">▦ Bảng
+                            Kanban</button><button class="nut-che-xem" id="nutDanhSach">☷ Danh sách</button></div>
+                </section>
+                <div class="thong-tin-bang"><span id="demKetQua">Hiển thị 12 sự cố · Ưu tiên xử lý sự cố tại công
+                        trường</span>
+                    <div class="chu-thich"><span><i class="cham cham-do"></i>Quá hạn</span><span><i
+                                class="cham cham-cam"></i>Đến hạn</span><span><i class="cham cham-xanh"></i>Đã
+                            đóng</span></div>
+                </div>
+
+                <section class="bang-kanban" id="bangKanban">
+                    <div class="cot-kanban">
+                        <header class="tieu-de-cot">
+                            <div><span class="cham-cot cham-xam"></span><b>Cần làm</b><small>Chờ phân công & kế
+                                    hoạch</small></div>
+                            <div class="cong-cu-cot"><span class="so-luong">3</span><button
+                                    aria-label="Tùy chọn cột">···</button></div>
+                        </header>
+                        <div class="danh-sach-the">
+                            <article class="the-su-co" data-khu-vuc="B" data-uu-tien="true" data-trang-thai="can-lam"
+                                data-ma="B-128" data-tieu-de="Thiếu lan can tại mép sàn">
+                                <div class="thong-tin-the"><span>B-128</span><span class="nhan-uu-tien">⚑ Ưu tiên</span></div>
+                                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=75"
+                                    alt="Khu vực thi công trên công trường">
+                                <h3>Thiếu lan can tại mép sàn</h3>
+                                <p>Tầng 12 · Khu B1</p>
+                                <div class="nguoi-phu-trach"><span class="anh-dai-dien-nho">LH</span> Lê Hoàng</div>
+                                <div class="han-chot qua-han">● Quá hạn: 02/10 · 16:00</div>
+                                <div class="chan-the"><span>◷ H. Hoàng</span><span>☷ 3 ▧ 4</span></div>
+                            </article>
+                            <article class="the-su-co" data-khu-vuc="B" data-uu-tien="true" data-trang-thai="can-lam"
+                                data-ma="B-126" data-tieu-de="Vật liệu chắn lối thoát hiểm">
+                                <div class="thong-tin-the"><span>B-126</span><span class="nhan-uu-tien">⚑ Ưu tiên</span></div>
+                                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=75"
+                                    alt="Vật liệu tại công trường">
+                                <h3>Vật liệu chắn lối thoát hiểm</h3>
+                                <p>Tầng 2 · Hành lang B</p>
+                                <div class="nguoi-phu-trach"><span class="anh-dai-dien-nho">HM</span> Hoàng Minh Phát</div>
+                                <div class="han-chot sap-den-han">● Hôm nay · 02/10 · 14:00</div>
+                                <div class="chan-the"><span>◷ Thu Hương</span><span>☷ 2 ▧ 2</span></div>
+                            </article>
+                            <article class="the-su-co" data-khu-vuc="C" data-uu-tien="false" data-trang-thai="can-lam"
+                                data-ma="B-130" data-tieu-de="Thép chờ chưa có nắp bảo vệ">
+                                <div class="thong-tin-the"><span>B-130</span><span class="nhan-uu-tien">⚑ Ưu tiên</span></div>
+                                <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=600&q=75"
+                                    alt="Khu vực thép và vật liệu">
+                                <h3>Thép chờ chưa có nắp bảo vệ</h3>
+                                <p>Tầng 5 · Trục C-D</p>
+                                <div class="nguoi-phu-trach"><span class="anh-dai-dien-nho">LH</span> Lê Hoàng</div>
+                                <div class="han-chot sap-den-han">● Ngày mai · 04/10 · 08:00</div>
+                                <div class="chan-the"><span>◷ Lê Hoàng</span><span>☷ 2 ▧ 1</span></div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="cot-kanban">
+                        <header class="tieu-de-cot">
+                            <div><span class="cham-cot cham-xduong"></span><b>Đang xử lý</b><small>Thực hiện phương án
+                                    khắc phục</small></div>
+                            <div class="cong-cu-cot"><span class="so-luong">3</span><button
+                                    aria-label="Tùy chọn cột">···</button></div>
+                        </header>
+                        <div class="danh-sach-the">
+                            <article class="the-su-co" data-khu-vuc="B" data-uu-tien="true" data-trang-thai="dang-xu-ly"
+                                data-ma="B-121" data-tieu-de="Giàn giáo thiếu giằng chéo">
+                                <div class="thong-tin-the"><span>B-121</span><span class="nhan-uu-tien">⚑ Ưu tiên</span></div>
+                                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=75"
+                                    alt="Giàn giáo trên công trường">
+                                <h3>Giàn giáo thiếu giằng chéo</h3>
+                                <p>Tầng 3 · Khu B2</p>
+                                <div class="nguoi-phu-trach"><span class="anh-dai-dien-nho">DG</span> Đội Giàn giáo Việt</div>
+                                <div class="han-chot qua-han">● Quá hạn: 02/10 · 17:00</div>
+                                <div class="chan-the"><span>◷ Trần Hưng</span><span>☷ 4 ▧ 6</span></div>
+                            </article>
+                            <article class="the-su-co" data-khu-vuc="C" data-uu-tien="true" data-trang-thai="dang-xu-ly"
+                                data-ma="B-117" data-tieu-de="Tủ điện tạm chưa che chắn">
+                                <div class="thong-tin-the"><span>B-117</span><span class="nhan-uu-tien">⚑ Ưu tiên</span></div>
+                                <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=600&q=75"
+                                    alt="Khu vực kỹ thuật công trình">
+                                <h3>Tủ điện tạm chưa che chắn</h3>
+                                <p>Tầng 8 · Trục C2</p>
+                                <div class="nguoi-phu-trach"><span class="anh-dai-dien-nho">CD</span> Đội Cơ điện</div>
+                                <div class="han-chot qua-han">● Quá hạn: 01/10 · 17:00</div>
+                                <div class="chan-the"><span>◷ Phạm Tuấn</span><span>☷ 3 ▧ 5</span></div>
+                            </article>
+                            <article class="the-su-co" data-khu-vuc="B" data-uu-tien="false" data-trang-thai="dang-xu-ly"
+                                data-ma="B-129" data-tieu-de="Dây điện vắt qua lối đi">
+                                <div class="thong-tin-the"><span>B-129</span><span class="nhan-uu-tien">⚑ Ưu tiên</span></div>
+                                <img src="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?auto=format&fit=crop&w=600&q=75"
+                                    alt="Dây điện ở khu vực thi công">
+                                <h3>Dây điện vắt qua lối đi</h3>
+                                <p>Tầng 8 · Hành lang A</p>
+                                <div class="nguoi-phu-trach"><span class="anh-dai-dien-nho">PT</span> Phạm Tuấn</div>
+                                <div class="han-chot sap-den-han">● Hôm nay · 03/10 · 16:00</div>
+                                <div class="chan-the"><span>◷ Phạm Tuấn</span><span>☷ 2 ▧ 3</span></div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="cot-kanban">
+                        <header class="tieu-de-cot">
+                            <div><span class="cham-cot cham-vcam"></span><b>Đang nghiệm thu</b><small>Chờ HSE xác
+                                    nhận kết quả</small></div>
+                            <div class="cong-cu-cot"><span class="so-luong">3</span><button
+                                    aria-label="Tùy chọn cột">···</button></div>
+                        </header>
+                        <div class="danh-sach-the">
+                            <article class="the-su-co" data-khu-vuc="B" data-uu-tien="true" data-trang-thai="nghiem-thu"
+                                data-ma="B-124" data-tieu-de="Đã lắp dây cứu sinh trên mái">
+                                <div class="thong-tin-the"><span>B-124</span><span class="nhan-uu-tien">⚑ Ưu tiên</span></div>
+                                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=75"
+                                    alt="Kết cấu công trình">
+                                <h3>Đã lắp dây cứu sinh trên mái</h3>
+                                <p>Tầng mái · Khu B</p>
+                                <div class="nguoi-phu-trach"><span class="anh-dai-dien-nho">NM</span> Nguyễn Minh</div>
+                                <div class="han-chot ngay-nghiem-thu">◉ Hôm nay · 03/10 · 15:00</div>
+                                <div class="chan-the"><span>◷ Nguyễn Minh</span><span>☷ 5 ▧ 2</span></div>
+                            </article>
+                            <article class="the-su-co" data-khu-vuc="C" data-uu-tien="false" data-trang-thai="nghiem-thu"
+                                data-ma="B-123" data-tieu-de="Đã che kín hố móng sàn">
+                                <div class="thong-tin-the"><span>B-123</span><span class="nhan-uu-tien">⚑ Ưu tiên</span></div>
+                                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=75"
+                                    alt="Mặt bằng thi công">
+                                <h3>Đã che kín hố móng sàn</h3>
+                                <p>Tầng 7 · Trục A3</p>
+                                <div class="nguoi-phu-trach"><span class="anh-dai-dien-nho">NH</span> Nguyễn Thành</div>
+                                <div class="han-chot sap-den-han">● Ngày mai · 04/10 · 10:00</div>
+                                <div class="chan-the"><span>◷ Nguyễn Tuấn</span><span>☷ 3 ▧ 1</span></div>
+                            </article>
+                            <article class="the-su-co" data-khu-vuc="B" data-uu-tien="false" data-trang-thai="nghiem-thu"
+                                data-ma="B-127" data-tieu-de="Đã bổ sung bình chữa cháy">
+                                <div class="thong-tin-the"><span>B-127</span><span class="nhan-uu-tien">⚑ Ưu tiên</span></div>
+                                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=75"
+                                    alt="Khu vực thi công">
+                                <h3>Đã bổ sung bình chữa cháy</h3>
+                                <p>Tầng 1 · Khu vực tập kết</p>
+                                <div class="nguoi-phu-trach"><span class="anh-dai-dien-nho">TH</span> Trần Hương</div>
+                                <div class="han-chot sap-den-han">● Ngày mai · 04/10 · 15:00</div>
+                                <div class="chan-the"><span>◷ Trần Hương</span><span>☷ 2 ▧ 2</span></div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="cot-kanban">
+                        <header class="tieu-de-cot">
+                            <div><span class="cham-cot cham-xxla"></span><b>Đã đóng</b><small>Đã xác nhận an
+                                    toàn</small></div>
+                            <div class="cong-cu-cot"><span class="so-luong">3</span><button
+                                    aria-label="Tùy chọn cột">···</button></div>
+                        </header>
+                        <div class="danh-sach-the">
+                            <article class="the-su-co" data-khu-vuc="B" data-uu-tien="false" data-trang-thai="da-dong"
+                                data-ma="B-119" data-tieu-de="Đã xử lý nước đọng trên sàn">
+                                <div class="thong-tin-the"><span>B-119</span><span class="nhan-uu-tien">⚑ Ưu tiên</span></div>
+                                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=75"
+                                    alt="Công trường sau thi công">
+                                <h3>Đã xử lý nước đọng trên sàn</h3>
+                                <p>Tầng 4 · Hành lang B</p>
+                                <div class="nguoi-phu-trach"><span class="anh-dai-dien-nho">HM</span> Hoàng Minh Phát</div>
+                                <div class="han-chot ngay-da-dong">● Đã đóng · 03/10 · 09:30</div>
+                                <div class="chan-the"><span>◷ H. Minh Phát</span><span>☷ 2 ▧ 2</span></div>
+                            </article>
+                            <article class="the-su-co" data-khu-vuc="C" data-uu-tien="false" data-trang-thai="da-dong"
+                                data-ma="B-115" data-tieu-de="Đã cố định lan can cầu thang">
+                                <div class="thong-tin-the"><span>B-115</span><span class="nhan-uu-tien">⚑ Ưu tiên</span></div>
+                                <img src="https://images.unsplash.com/photo-1601058268499-e52658b8bb88?auto=format&fit=crop&w=600&q=75"
+                                    alt="Cầu thang công trình">
+                                <h3>Đã cố định lan can cầu thang</h3>
+                                <p>Tầng 3 · Thang bộ B</p>
+                                <div class="nguoi-phu-trach"><span class="anh-dai-dien-nho">KV</span> Cao Văn Thành</div>
+                                <div class="han-chot ngay-da-dong">● Đã đóng · 02/10 · 16:20</div>
+                                <div class="chan-the"><span>◷ Lê Hoàng</span><span>☷ 4 ▧ 2</span></div>
+                            </article>
+                            <article class="the-su-co" data-khu-vuc="D" data-uu-tien="false" data-trang-thai="da-dong"
+                                data-ma="B-112" data-tieu-de="Đã phân luồng khu vực cẩu">
+                                <div class="thong-tin-the"><span>B-112</span><span class="nhan-uu-tien">⚑ Ưu tiên</span></div>
+                                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=75"
+                                    alt="Khu vực máy móc công trường">
+                                <h3>Đã phân luồng khu vực cẩu</h3>
+                                <p>Sân B · Khu tập kết</p>
+                                <div class="nguoi-phu-trach"><span class="anh-dai-dien-nho">NK</span> Nguyễn Kỳ</div>
+                                <div class="han-chot ngay-da-dong">● Đã đóng · 02/10 · 12:15</div>
+                                <div class="chan-the"><span>◷ Trần Hương</span><span>☷ 1 ▧ 1</span></div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="che-xem-danh-sach" id="cheXemDS" hidden>
+                    <div class="hang-tieu-de-ds"><span>Mã sự cố</span><span>Tiêu đề</span><span>Khu vực</span><span>Trạng
+                            thái</span><span>Hạn xử lý</span></div>
+                    <div id="cacHangDS"></div>
+                </section>
+                <footer class="chan-trang"><span>SiteSafe · An toàn xây dựng</span><span>● Dữ liệu lúc 10:32 · Độ mới
+                        nhất</span></footer>
+            </div>
+        </main>
+    </div>
+
+    <div class="nen-cua-so" id="cuaSoSuCo" hidden>
+        <section class="cua-so-su-co" role="dialog" aria-modal="true" aria-labelledby="tieuDeModal">
+            <div class="phan-dau-cua-so">
+                <div><small id="maSuCoModal">MÃ SỰ CỐ</small>
+                    <h2 id="tieuDeModal">Tiêu đề sự cố</h2>
+                </div><button id="nutDongModal" class="nut-dong" aria-label="Đóng">×</button>
+            </div>
+            <img class="anh-cua-so" id="anhModal" alt="Ảnh hiện trường">
+            <div class="thong-tin-cua-so">
+                <div><small>Khu vực</small><b id="khuVucModal">Zone B</b></div>
+                <div><small>Trạng thái</small><b id="trangThaiModal">Cần làm</b></div>
+                <div><small>Người phụ trách</small><b id="nguoiPhuTrachModal">Lê Hoàng</b></div>
+            </div>
+            <p class="mo-ta-cua-so">Cần kiểm tra hiện trường, xác nhận biện pháp khắc phục và cập nhật minh chứng
+                trước khi đóng sự cố.</p>
+            <label class="nhan-trang-thai" for="chonTrangThaiModal">Cập nhật trạng thái</label><select id="chonTrangThaiModal">
+                <option value="can-lam">Cần làm</option>
+                <option value="dang-xu-ly">Đang xử lý</option>
+                <option value="nghiem-thu">Đang nghiệm thu</option>
+                <option value="da-dong">Đã đóng</option>
+            </select>
+            <div class="hanh-dong-cua-so"><button class="nut nut-sang" id="nutHuyModal">Đóng</button><button
+                    class="nut nut-cam" id="nutLuuTrangThai">Lưu trạng thái</button></div>
+        </section>
+    </div>
+    <div class="thong-bao-nho" id="thongBao" role="status" aria-live="polite"></div>
+    <script src="corrective actions.js"></script>
+</body>
+
+</html>
