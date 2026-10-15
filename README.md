@@ -24,6 +24,7 @@ Trang web giúp quản lý công trường theo dõi, phân loại và cập nh�
 * **HTML:** Semantic HTML (`header`, `nav`, `main`, `section`, `article`, `footer`, `aside`).
 * **CSS:** Flexbox, CSS Grid, Custom Variables, Media Queries (Responsive).
 * **JavaScript:** DOM Manipulation, Event Handling, Array Filtering, Export CSV.
+* **FontAwesome:** Tích hợp bộ icon biểu tượng trực quan.
 
 ---
 
