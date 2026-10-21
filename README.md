@@ -2,7 +2,7 @@
 ## Thông tin sinh viên
 * **Họ và tên:** Nguyễn Thị Tâm
 * **Mã sinh viên:** 2551060685
-* **Lớp:** 67CNTT1
+* **Lớp :** 67CNTT1
 * **Tên trang thực hiện:** Tiến độ xử lý sự cố / Hành động khắc phục (Corrective Actions)
 
 ---
